@@ -1,33 +1,15 @@
 
-/**
- * Write a description of class InputData here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import javax.swing.JOptionPane;
+
 public class InputData
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class InputData
-     */
-    public InputData()
+ {
+    public static void main(String[] args)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
-}
+            
+           String input = JOptionPane.showInputDialog ( "What is your name?");
+           
+           System.out.println( "Hello,"+input );
+            
+        }     
+    }     
+            
