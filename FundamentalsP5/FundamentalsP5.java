@@ -7,9 +7,23 @@ public class FundamentalsP5
     String[] movies = {"Minions", "Pixels", "Avengers"};
     for (int index = 0;index< movies.length; index++ )
     {
-    System.out.println(movies[index]+ "\n" + "\n");
+    System.out.println(movies[index] );
     }
     
+    
+    String[] song = {"BAD", "Just Right", "Ring My Bell"};
+    
+    int num = 0;
+    
+    while (num< song.length-1)
+    
+   {
+       System.out.print(song[num]+ ",");
+       num++;
+       
+    }    
+    
+    System.out.print(song[song.length-1]);
     }
 }
  

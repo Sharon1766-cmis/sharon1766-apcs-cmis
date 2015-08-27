@@ -5,7 +5,7 @@ public class FundamentalsP4
          for( int n = 1; n< 11; n++)
          
          {
-             System.out.println ( n + "\t" + n*n + "\t" + (int)(n+(n*Math.random()*2)) );
+             System.out.println ( n + "\t" + n*n + "\t" + (int)(n+(n*Math.random())) );
             }
     }  // GERNERATE NUMBER BETWEEN NUMBERS
    
