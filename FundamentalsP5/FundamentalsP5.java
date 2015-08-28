@@ -9,8 +9,9 @@ public class FundamentalsP5
     {
     System.out.println(movies[index] );
     }
-    
-    
+    {
+     System.out.print("\n\n");
+    }
     String[] song = {"BAD", "Just Right", "Ring My Bell"};
     
     int num = 0;

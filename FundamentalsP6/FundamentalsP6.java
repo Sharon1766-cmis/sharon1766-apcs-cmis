@@ -1,15 +1,16 @@
 
+
+
 public class FundamentalsP6
 {
     public static void main ( String[] args )
     {
     
-        
-    ran = Math.random()    ;
-    String[] myArray = {ran};
-    for( int index = 0; index < myArray.length; index++ )
+           
+    int [] myArray = {Math.random()};
+    for( int index = 50; index < myArray.length; index-- )
     {
-    System.out.println(myArray[index] );
+    System.out.println(myArray[Math.random()] );
     }
     
     
