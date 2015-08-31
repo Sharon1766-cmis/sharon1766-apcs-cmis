@@ -11,13 +11,17 @@ public class FundamentalsP7
     for (int index = 0; index < array.length ; index++)
     
     {
-     array[index] = (int) (Math.random()*100);
+     array[index] = (int) ((Math.random()*201)-100);
     }
      for (int index = 0; index < array.length ; index++)
     
     {
      System.out.print(array[index] + " ");
     }
+    {
+     System.out.print( "\n ");
+    }
+    
     // MAKE IT BOTH POSITIVE N NEGATIVe
     }
 }
