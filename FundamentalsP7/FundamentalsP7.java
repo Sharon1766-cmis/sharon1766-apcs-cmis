@@ -1,28 +1,48 @@
 
 
-
 public class FundamentalsP7
 {
     public static void main ( String[] args )
     {
-         
-    int [] array = new int[10];
+
+        int [] array = new int[10];
+        int n = 0;
+        int p = 0;
+
+        for (int index = 0; index < array.length ; index++)
+
+        {
+            int i  = 0;
+
+            i = (int) (100*Math.random());
+            if ( i % 2 == 0)
+            {
+                array[index] =((int)(100*Math.random()));
+                n++;
+            }
+            else
+            {
+                array[index] = ((int)(100*Math.random()));
+                p++;
+            }
+
+            int  indexx = 0;
+
+            while ( index < array.length )
+
+            {
+                System.out.print(array[indexx] + " ");
+                indexx++;
+            }
+
+            {
+                System.out.print(array[indexx] + " ");
+            }
+
     
-    for (int index = 0; index < array.length ; index++)
-    
-    {
-     array[index] = (int) ((Math.random()*201)-100);
+            // MAKE IT BOTH POSITIVE N NEGATIVe
+        }
+
     }
-     for (int index = 0; index < array.length ; index++)
-    
-    {
-     System.out.print(array[index] + " ");
-    }
-    {
-     System.out.print( "\n ");
-    }
-    
-    // MAKE IT BOTH POSITIVE N NEGATIVe
-    }
+
 }
- 
