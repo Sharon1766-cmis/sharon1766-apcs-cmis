@@ -17,7 +17,7 @@ public class FundamentalsP7
             i = (int) (100*Math.random());
             if ( i % 2 == 0)
             {
-                array[index] =((int)(100*Math.random()));
+                array[index] =((int)(100*(-1)*Math.random( ) ) );
                 n++;
             }
             else
@@ -25,24 +25,27 @@ public class FundamentalsP7
                 array[index] = ((int)(100*Math.random()));
                 p++;
             }
-
-            int  indexx = 0;
-
-            while ( index < array.length )
-
-            {
-                System.out.print(array[indexx] + " ");
-                indexx++;
-            }
-
-            {
-                System.out.print(array[indexx] + " ");
-            }
-
-    
-            // MAKE IT BOTH POSITIVE N NEGATIVe
         }
 
-    }
+        int  index = 0;
 
+        while ( index < array.length )
+
+        {
+                System.out.println(array[index] + " ");
+                index++;
+            // MAKE IT BOTH POSITIVE N NEGATIVe
+        }
+        System.out.println ("The number of postivie numbers are" +p+ ", and the number of negative numbers are " +n  +".");
+        
+        for (int i = 0; i< array.length; i++)
+        {
+            if (array [i] > 0)
+        {
+            
+           System.out.print(array[i] + "\t" );
+        }
+    }
+    }
 }
+

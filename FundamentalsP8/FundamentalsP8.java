@@ -1,33 +1,22 @@
-
-/**
- * Write a description of class FundamentalsP8 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class FundamentalsP8
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class FundamentalsP8
-     */
-    public FundamentalsP8()
+    public static void main ( String[] args )
     {
-        // initialise instance variables
-        x = 0;
+    
+        
+    String[] art = {"EXO", "BTS", "GOT7"};
+    for (int index = 0;index< art.length; index++ )
+    {
+    System.out.println(art[index] );
+    }
+    {
+     System.out.print("\n\n");
+ 
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+     {
+    System.out.println(art[index] );
     }
 }
+}
+ 
