@@ -1,33 +1,26 @@
 
-/**
- * Write a description of class FundamentalsP9 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import javax.swing.JOptionPane;
+
 public class FundamentalsP9
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class FundamentalsP9
-     */
-    public FundamentalsP9()
+ {
+    public static void main(String[] args)
     {
-        // initialise instance variables
-        x = 0;
-    }
+            
+           String username = JOptionPane.showInputDialog ( "What is the username");
+           String npassword = JOptionPane.showInputDialog ( "What is the password");
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+           int password=Integer.parseInt(npassword);
+      
+                
+           if ( username.equals("sharon1766")&& password == 1766 )
+           
+            {
+            System.out.println(" You have successfully logged in");
+             }
+             else
+             {
+                 System.out.println("Login unsuccessful..try again");
+             }     
+    }   
 }
+            

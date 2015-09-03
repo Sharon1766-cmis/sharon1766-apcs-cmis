@@ -24,7 +24,7 @@ public class FundamentalsP5
        
     }    
     
-    System.out.print(song[song.length-1]);
+    System.out.print(song[num = 2]);
     }
 }
  

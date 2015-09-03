@@ -21,9 +21,10 @@ public class FundamentalsP8
     }
       {
      System.out.print("\n\n");
+     
     }
     
-     for (int index = 0; index<art.length; index++)
+     for (int index = 0; index<art.length; index++) 
      {
      if (art[index].equals ("Michael Jackson"))
      {
@@ -31,12 +32,11 @@ public class FundamentalsP8
         }
         else
         {
-             System.out.println ("  Michael not found in music" + "["+index+"]");
+             System.out.println ("Michael not found in music" + "["+index+"]");
         }
     }
     
   
-    
-}
+    }
 }
  
