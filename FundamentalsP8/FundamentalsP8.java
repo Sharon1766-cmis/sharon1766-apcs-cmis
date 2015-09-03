@@ -11,12 +11,32 @@ public class FundamentalsP8
     }
     {
      System.out.print("\n\n");
- 
     }
-
+    
+    art [((int) (3*Math.random()))] = "Michael Jackson";
+    
+    for (int index = 0; index<art.length; index++)
+    {
+        System.out.println(art[index]);
+    }
+      {
+     System.out.print("\n\n");
+    }
+    
+     for (int index = 0; index<art.length; index++)
      {
-    System.out.println(art[index] );
+     if (art[index].equals ("Michael Jackson"))
+     {
+         System.out.println ("We found Michael !");
+        }
+        else
+        {
+             System.out.println ("  Michael not found in music" + "["+index+"]");
+        }
     }
+    
+  
+    
 }
 }
  
