@@ -7,12 +7,13 @@ public class Histrogram
         String nnum = JOptionPane.showInputDialog ( "Give me an integer~ PLLLLEEASSEEE");
         int num=Integer.parseInt(nnum);
         
-        int [] randomnums = new int[num];
+        int [] randomNums = new int[num];
         int [] counts = new int[100];
+        String [] hash = new String[num];
         
         for (int index = 0; index < num; index++)
         {
-           randomnums[ index ] = (int) (Math.random() * (99 -1) +1) ;
+           randomNums[ index ] = (int) (Math.random() * (99 -1) +1) ;
         }    
         
          for (int index = 0; index < counts.length; index++)
@@ -23,28 +24,12 @@ public class Histrogram
         
         for(int index = 0; index < counts.length;index++)
         {
-            String hash = " ";
-        
-        if ((int)  randomnums[index] == counts[index])
-        {
-            
-            
-            
-             for (int index2 = 0; index2 < counts[index]; index2++)
-                  {
-                  hash += "#";
-                  }
-            
-        } 
-        else if(randomnums[index] != counts[index])
-        {
-             System.out.println(index + ": ");
-        }
-        
-           for (int i = 0; i < num; i++)
-        {
-            System.out.println(index + ": " + hash);
-        }  
-        }
+            int indexer = 0;
+         
+            while (randomNums[index] == counts[indexer])
+            {
+               hash[index] += "#" ; 
+               indexer++;
+            }
     }     
  } 
