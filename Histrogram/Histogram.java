@@ -21,11 +21,77 @@ public class Histogram
                
                 counts[randomNums[index]]++;
              
-        }    
+        }     
         for(int index = 0; index < counts.length;index++)
         {
-            System.out.println(index + ": " + counts[index]);
+            String hashtag = " ";
+            for( int hashtags = 0; hashtags < counts[index] ; hashtags++)
+            {
+               hashtag += "#";
+               
+            }
+            System.out.println(index + ": " + hashtag); 
+            
         }
+        int minimum = randomNums[0];
+        for (int index = 0; index < randomNums.length; index++)
+        {
+               
+               if(randomNums[index] < minimum)
+               {
+                   minimum = randomNums[index];
+                   
+                }
+              
+        }       
+        System.out.println("Lowest Value: " + minimum);
+        
+        int maximum = randomNums[0];
+        for (int index = 0; index < randomNums.length; index++)
+        {
+               
+               if(randomNums[index] > maximum)
+               {
+                   maximum = randomNums[index];
+                   
+                }
+              
+        }       
+        System.out.println("Biggest Value: " + maximum);
+        
+        int sum = 0;
+        for (int index = 0; index < randomNums.length; index++)
+        {
+               
+              sum = sum+randomNums[index];
+              
+        }       
+        System.out.println("Sum Value: " + sum);
+        
+        
+        float average = (float) sum / (float) randomNums.length;
+        
+        
+        System.out.println( "Average: " + average);
+        
+         int most = 0;
+        for (int index = 0; index < counts.length; index++)
+        {
+               
+               if(counts[index] > most)
+               {
+                   most = counts[index];
+                   
+                }
+                
+        }
+        for(int index = 0; index < counts.length; index++)
+        {
+            if (counts[index] == most)
+               {
+               System.out.println("Most Occuring Value: " + counts[index] );    
+               }   
+            }
          
    }
 } 
