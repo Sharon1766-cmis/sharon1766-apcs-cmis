@@ -74,24 +74,20 @@ public class Histogram
         
         System.out.println( "Average: " + average);
         
-         int most = 0;
+         int most = counts[0];
+         int greatest = 0;
         for (int index = 0; index < counts.length; index++)
         {
                
-               if(counts[index] > most)
+               if (counts[index] >= most )
                {
                    most = counts[index];
+                   greatest = index;
                    
                 }
-                
-        }
-        for(int index = 0; index < counts.length; index++)
-        {
-            if (counts[index] == most)
-               {
-               System.out.println("Most Occuring Value: " + counts[index] );    
-               }   
-            }
+              
+        }       
+        System.out.println("Most Ocurring Value: " + greatest);
          
    }
 } 
