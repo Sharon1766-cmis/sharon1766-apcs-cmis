@@ -10,13 +10,22 @@ public static void main ( String[] argv )
         
         int [] days = new int [Inputdays];
         int Temp;
+        int PreTemp = 0;
         int day;
+        int swing;
  
         
         for ( int i = 0; i < Inputdays; i++ )
         {
             Temp = (int) (Math.random() * 200) - 100 ;
-            //System.out.println(Temp);
+            day = i +1 ;
+            swing = PreTemp;
+           
+           
+               System.out.println(day + "   "+Temp+ "   " +swing);
+               
+            PreTemp = Temp;
+          
         }
         
         
