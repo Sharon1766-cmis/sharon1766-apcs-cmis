@@ -21,8 +21,7 @@ public Clock (int Hour, int Mins, int Secs)
 public String toString()
     {
         String output = new String ();
-        output = "Kitchen CLock is :" +Hour+ " : " + Mins + " : " +Secs +"\n"+
-                         "Bedroom CLock is :" +Hour+ " : " + Mins + " : " +Secs;
+        output = Hour+ " : " + Mins + " : " +Secs +"\n";
         return output;
     } 
     
