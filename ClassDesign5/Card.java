@@ -2,16 +2,16 @@
 public class Card
 {
  
-   private String  Name;
-   private int Seating;
+   private int  Faces;
+   private String Suit;
    
-public Car1()
+public Card()
     {
         Name = new String ("Ford Fiesta");
         Seating = 5;
        
     }    
-public Car1 (String Name, int Seating )    
+public Card (String Name, int Seating )    
     {
        this.Name = Name;
        this.Seating = Seating;

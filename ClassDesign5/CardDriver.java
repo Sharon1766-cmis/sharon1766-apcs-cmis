@@ -4,10 +4,13 @@ public class CardDriver
  public static void main ( String[] args )
  
     {
-        Car1 Car1=new Car1();
-        Car1 Car2 = new Car1(  "Ferrari" , 2 );
+        String [] MyHand = new String[3];
+        String [] Cards =  {"1", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"};
+        String [] Suit = {"♥", "♦", "♣", "♠"};
+        Card Card=new Card();
+        Card Car2 = new Card(  "Ferrari" , 2 );
         
-        System.out.println(Car1);
+        System.out.println(Card);
         System.out.println( Car2);
         
     }
