@@ -2,26 +2,25 @@
 public class Card
 {
  
-   private int  Faces;
-   private String Suit;
+   private int  NumOfCards;
+   private int CardsGiven;
+   private String MyHand;
    
 public Card()
     {
-        Name = new String ("Ford Fiesta");
-        Seating = 5;
+      NumOfCards = 52;
+      CardsGiven = 3;
        
     }    
-public Card (String Name, int Seating )    
+public Card (int NumOfCards, int CardsGiven )    
     {
-       this.Name = Name;
-       this.Seating = Seating;
+       this.MyHand = MyHand;
       
     }   
 public String toString()
     {
         String output = new String ();
-        output = "Name:"+Name +"\n"+
-                        "Seating:" +Seating+"\n" ;
+        output = MyHand;
              
         return output;
     } 

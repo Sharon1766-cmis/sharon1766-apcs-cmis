@@ -7,11 +7,15 @@ public class CardDriver
         String [] MyHand = new String[3];
         String [] Cards =  {"1", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"};
         String [] Suit = {"♥", "♦", "♣", "♠"};
-        Card Card=new Card();
-        Card Car2 = new Card(  "Ferrari" , 2 );
+       
         
-        System.out.println(Card);
-        System.out.println( Car2);
+       for( int i = 0; i < MyHand.length; i++)
+       {
+        int a = ((int) (Math.random()*12));
+        int b = ((int)(Math.random()*4)); 
+        MyHand[i] = Cards[a] + Suit[b];
+        System.out.println(MyHand[i]);
+        }
         
     }
 }
