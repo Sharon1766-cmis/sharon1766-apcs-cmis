@@ -28,61 +28,61 @@ public class BlackJackP6
        {
         a[i] = ((int) (Math.random()*13));
         b[i] = ((int) (Math.random()*4));
-       Player1[i]= Cards[a[i]] + Suit[b[i]];
-        System.out.print( " Dealer Card: " +Player1[i] + "\n");
+        Dealer[i]= Cards[a[i]] + Suit[b[i]];
+        System.out.print( " Dealer Card: " +Dealer[i] + "\n");
         }
         
        for( int i = 0; i < Dealer.length; i++)
        {
-             if (Dealer[i] == ("J") )
+             if ( Cards[a[i]] == ("J") )
              {
                 Value = 10;
             }
-            else if (Dealer[i] ==("Q") )
+            else if (Cards[a[i]] ==("Q") )
              {
                 Value = 10;
             }
-            else if  (Dealer[i] == ("K") )
+            else if  (Cards[a[i]] == ("K") )
              {
                 Value = 10;
             }
-           else if (Dealer[i] == ("1") )
+           else if (Cards[a[i]] == ("1") )
              {
                 Value = 11;
             }
-            else if (Dealer[i] == ("2") )
+            else if (Cards[a[i]] == ("2") )
              {
                 Value = 2;
              }   
-            else if (Dealer[i] == ("3") )
+            else if (Cards[a[i]] == ("3") )
              {
                 Value = 3;
              }   
-           else if (Dealer[i] == ("4") )
+           else if (Cards[a[i]] == ("4") )
              {
                 Value = 4;
              }    
-           else if (Dealer[i] == ("5") )
+           else if (Cards[a[i]] == ("5") )
              {
                 Value = 5;
              }   
-            else if (Dealer[i] == ("6") )
+            else if (Cards[a[i]] == ("6") )
              {
                 Value = 6;
              }   
-           else if (Dealer[i] == ("7") )
+           else if (Cards[a[i]] == ("7") )
              {
                 Value = 7;
              }       
-             else if (Dealer[i] == ("8") )
+             else if (Cards[a[i]] == ("8") )
              {
                 Value = 8;
              }   
-            else if (Dealer[i] == ("9") )
+            else if (Cards[a[i]] == ("9") )
              {
                 Value = 9;
              }   
-           else if (Dealer[i] == ("10") )
+           else if (Cards[a[i]] == ("10") )
              {
                 Value = 10;
              }     
@@ -97,64 +97,66 @@ public class BlackJackP6
         System.out.print("\n");
        System.out.print("----PLAYER 1----"); 
        System.out.print("\n");
-          for( int i = 0; i < Player1.length; i++)
+       for( int i = 0; i < Player1.length; i++)
        {
-        int a = ((int) (Math.random()*12));
-        Player1[i] = Cards[a];
-        System.out.print( " Player Card: " +Cards[a] + "\n");
+        a[i] = ((int) (Math.random()*13));
+        b[i] = ((int) (Math.random()*4));
+        Player1[i]= Cards[a[i]] + Suit[b[i]];
+        System.out.print( " Player Card: " +Player1[i] + "\n");
         }
+        
         
        for( int i = 0; i < Player1.length; i++)
        {
-             if (Player1[i] == ("J") )
+             if (Cards[a[i]] == ("J") )
              {
                 Value = 10;
             }
-            else if (Player1[i] ==("Q") )
+            else if (Cards[a[i]] ==("Q") )
              {
                 Value = 10;
             }
-            else if  (Player1[i] == ("K") )
+            else if  (Cards[a[i]] == ("K") )
              {
                 Value = 10;
             }
-           else if (Player1[i] == ("1") )
+           else if (Cards[a[i]] == ("1") )
              {
                 Value = 11;
             }
-            else if (Player1[i] == ("2") )
+            else if (Cards[a[i]] == ("2") )
              {
                 Value = 2;
              }   
-            else if (Player1[i] == ("3") )
+            else if (Cards[a[i]] == ("3") )
              {
                 Value = 3;
              }   
-           else if (Player1[i] == ("4") )
+           else if (Cards[a[i]] == ("4") )
              {
                 Value = 4;
              }    
-           else if (Player1[i] == ("5") )
+           else if (Cards[a[i]] == ("5") )
              {
                 Value = 5;
              }   
-            else if (Player1[i] == ("6") )
+            else if (Cards[a[i]] == ("6") )
              {
                 Value = 6;
              }   
-           else if (Player1[i] == ("7") )
+           else if (Cards[a[i]] == ("7") )
              {
                 Value = 7;
              }       
-             else if (Player1[i] == ("8") )
+             else if (Cards[a[i]] == ("8") )
              {
                 Value = 8;
              }   
-            else if (Player1[i] == ("9") )
+            else if (Cards[a[i]] == ("9") )
              {
                 Value = 9;
              }   
-           else if (Player1[i] == ("10") )
+           else if (Cards[a[i]] == ("10") )
              {
                 Value = 10;
              }     
@@ -192,64 +194,66 @@ public class BlackJackP6
         System.out.print("\n");
         System.out.print("----PLAYER 2----"); 
        System.out.print("\n");
-          for( int i = 0; i < Player2.length; i++)
+       for( int i = 0; i < Player2.length; i++)
        {
-        int a = ((int) (Math.random()*12));
-        Player2[i] = Cards[a];
-        System.out.print( " Player Card: " +Cards[a] + "\n");
+        a[i] = ((int) (Math.random()*13));
+        b[i] = ((int) (Math.random()*4));
+        Player2[i]= Cards[a[i]] + Suit[b[i]];
+        System.out.print( " Player Card: " +Player2[i] + "\n");
         }
+        
         
        for( int i = 0; i < Player2.length; i++)
        {
-             if (Player2[i] == ("J") )
+             if (Cards[a[i]] == ("J") )
              {
                 Value = 10;
             }
-            else if (Player2[i] ==("Q") )
+            else if (Cards[a[i]] ==("Q") )
              {
                 Value = 10;
             }
-            else if  (Player2[i] == ("K") )
+            else if  (Cards[a[i]] == ("K") )
              {
                 Value = 10;
             }
-           else if (Player2[i] == ("1") )
+           else if (Cards[a[i]] == ("1") )
              {
                 Value = 11;
             }
-            else if (Player2[i] == ("2") )
+            else if (Cards[a[i]] == ("2") )
              {
                 Value = 2;
              }   
-            else if (Player2[i] == ("3") )
+            else if (Cards[a[i]] == ("3") )
              {
                 Value = 3;
              }   
-           else if (Player2[i] == ("4") )
+           else if (Cards[a[i]] == ("4") )
              {
                 Value = 4;
              }    
-           else if (Player2[i] == ("5") )
+           else if (Cards[a[i]] == ("5") )
              {
                 Value = 5;
              }   
-            else if (Player2[i] == ("6") )
+            else if (Cards[a[i]] == ("6") )
              {
                 Value = 6;
              }   
-           else if (Player2[i] == ("7") )
+           else if (Cards[a[i]] == ("7") )
              {
                 Value = 7;
              }       
-             else if (Player2[i] == ("8") )
+             else if (Cards[a[i]] == ("8") )
              {
                 Value = 8;
              }   
-            else if (Player2[i] == ("9") )
+            else if (Cards[a[i]] == ("9") )
              {
                 Value = 9;
              }   
-           else if (Player2[i] == ("10") )
+           else if (Cards[a[i]] == ("10") )
              {
                 Value = 10;
              }     
@@ -288,64 +292,65 @@ public class BlackJackP6
         
        System.out.print("----PLAYER 3----"); 
        System.out.print("\n");
-          for( int i = 0; i < Player3.length; i++)
+       for( int i = 0; i < Player3.length; i++)
        {
-        int a = ((int) (Math.random()*12));
-        Player3[i] = Cards[a];
-        System.out.print( " Player Card: " +Cards[a] + "\n");
+        a[i] = ((int) (Math.random()*13));
+        b[i] = ((int) (Math.random()*4));
+        Player3[i]= Cards[a[i]] + Suit[b[i]];
+        System.out.print( " Player Card: " +Player3[i] + "\n");
         }
         
        for( int i = 0; i < Player3.length; i++)
        {
-             if (Player3[i] == ("J") )
+             if (Cards[a[i]] == ("J") )
              {
                 Value = 10;
             }
-            else if (Player3[i] ==("Q") )
+            else if (Cards[a[i]] ==("Q") )
              {
                 Value = 10;
             }
-            else if  (Player3[i] == ("K") )
+            else if  (Cards[a[i]] == ("K") )
              {
                 Value = 10;
             }
-           else if (Player3[i] == ("1") )
+           else if (Cards[a[i]] == ("1") )
              {
                 Value = 11;
             }
-            else if (Player3[i] == ("2") )
+            else if (Cards[a[i]] == ("2") )
              {
                 Value = 2;
              }   
-            else if (Player3[i] == ("3") )
+            else if (Cards[a[i]] == ("3") )
              {
                 Value = 3;
              }   
-           else if (Player3[i] == ("4") )
+           else if (Cards[a[i]] == ("4") )
              {
                 Value = 4;
              }    
-           else if (Player3[i] == ("5") )
+           else if (Cards[a[i]] == ("5") )
              {
                 Value = 5;
              }   
-            else if (Player3[i] == ("6") )
+            else if (Cards[a[i]] == ("6") )
              {
                 Value = 6;
              }   
-           else if (Player3[i] == ("7") )
+           else if (Cards[a[i]] == ("7") )
              {
                 Value = 7;
              }       
-             else if (Player3[i] == ("8") )
+             else if (Cards[a[i]] == ("8") )
              {
                 Value = 8;
              }   
-            else if (Player3[i] == ("9") )
+            else if (Cards[a[i]] == ("9") )
              {
                 Value = 9;
              }   
-           else if (Player3[i] == ("10") )
+           else if (Cards[a[i]] == ("10") )
              {
                 Value = 10;
              }     
@@ -382,64 +387,65 @@ public class BlackJackP6
         
          System.out.print("----PLAYER 4----"); 
        System.out.print("\n");
-          for( int i = 0; i < Player4.length; i++)
+       for( int i = 0; i < Player4.length; i++)
        {
-        int a = ((int) (Math.random()*12));
-        Player4[i] = Cards[a];
-        System.out.print( " Player Card: " +Cards[a] + "\n");
+        a[i] = ((int) (Math.random()*13));
+        b[i] = ((int) (Math.random()*4));
+        Player4[i]= Cards[a[i]] + Suit[b[i]];
+        System.out.print( " Player Card: " +Player4[i] + "\n");
         }
         
        for( int i = 0; i < Player4.length; i++)
        {
-             if (Player4[i] == ("J") )
+             if (Cards[a[i]] == ("J") )
              {
                 Value = 10;
             }
-            else if (Player4[i] ==("Q") )
+            else if (Cards[a[i]] ==("Q") )
              {
                 Value = 10;
             }
-            else if  (Player4[i] == ("K") )
+            else if  (Cards[a[i]] == ("K") )
              {
                 Value = 10;
             }
-           else if (Player4[i] == ("1") )
+           else if (Cards[a[i]] == ("1") )
              {
                 Value = 11;
             }
-            else if (Player4[i] == ("2") )
+            else if (Cards[a[i]] == ("2") )
              {
                 Value = 2;
              }   
-            else if (Player4[i] == ("3") )
+            else if (Cards[a[i]] == ("3") )
              {
                 Value = 3;
              }   
-           else if (Player4[i] == ("4") )
+           else if (Cards[a[i]] == ("4") )
              {
                 Value = 4;
              }    
-           else if (Player4[i] == ("5") )
+           else if (Cards[a[i]] == ("5") )
              {
                 Value = 5;
              }   
-            else if (Player4[i] == ("6") )
+            else if (Cards[a[i]] == ("6") )
              {
                 Value = 6;
              }   
-           else if (Player4[i] == ("7") )
+           else if (Cards[a[i]] == ("7") )
              {
                 Value = 7;
              }       
-             else if (Player4[i] == ("8") )
+             else if (Cards[a[i]] == ("8") )
              {
                 Value = 8;
              }   
-            else if (Player4[i] == ("9") )
+            else if (Cards[a[i]] == ("9") )
              {
                 Value = 9;
              }   
-           else if (Player4[i] == ("10") )
+           else if (Cards[a[i]] == ("10") )
              {
                 Value = 10;
              }     
@@ -475,65 +481,65 @@ public class BlackJackP6
         
            System.out.print("----PLAYER 5----"); 
        System.out.print("\n");
-          for( int i = 0; i < Player5.length; i++)
+       for( int i = 0; i < Player5.length; i++)
        {
-        int a = ((int) (Math.random()*12));
-        int b = ((int)(Math.random()*4)); 
-        Player5[i] = Cards[a] + Suit[b];
-        System.out.print( " Player Card: " +Cards[a] + "\n");
+        a[i] = ((int) (Math.random()*13));
+        b[i] = ((int) (Math.random()*4));
+        Player5[i]= Cards[a[i]] + Suit[b[i]];
+        System.out.print( " Player Card: " +Player5[i] + "\n");
         }
         
        for( int i = 0; i < Player5.length; i++)
        {
-             if (Player5[i] == ("J") )
+             if (Cards[a[i]] == ("J") )
              {
                 Value = 10;
             }
-            else if (Player5[i] ==("Q") )
+            else if (Cards[a[i]] ==("Q") )
              {
                 Value = 10;
             }
-            else if  (Player5[i] == ("K") )
+            else if  (Cards[a[i]] == ("K") )
              {
                 Value = 10;
             }
-           else if (Player5[i] == ("1") )
+           else if (Cards[a[i]] == ("1") )
              {
                 Value = 11;
             }
-            else if (Player5[i] == ("2") )
+            else if (Cards[a[i]] == ("2") )
              {
                 Value = 2;
              }   
-            else if (Player5[i] == ("3") )
+            else if (Cards[a[i]] == ("3") )
              {
                 Value = 3;
              }   
-           else if (Player5[i] == ("4") )
+           else if (Cards[a[i]] == ("4") )
              {
                 Value = 4;
              }    
-           else if (Player5[i] == ("5") )
+           else if (Cards[a[i]] == ("5") )
              {
                 Value = 5;
              }   
-            else if (Player5[i] == ("6") )
+            else if (Cards[a[i]] == ("6") )
              {
                 Value = 6;
              }   
-           else if (Player5[i] == ("7") )
+           else if (Cards[a[i]] == ("7") )
              {
                 Value = 7;
              }       
-             else if (Player5[i] == ("8") )
+             else if (Cards[a[i]] == ("8") )
              {
                 Value = 8;
              }   
-            else if (Player5[i] == ("9") )
+            else if (Cards[a[i]] == ("9") )
              {
                 Value = 9;
              }   
-           else if (Player5[i] == ("10") )
+           else if (Cards[a[i]] == ("10") )
              {
                 Value = 10;
              }     
