@@ -2,30 +2,28 @@
 public class Card
 {
  
-   private int  NumOfCards;
-   private int CardsGiven;
-   private String MyHand;
+   public String Cards;
+   public String Suit;
 
    
 public Card()
     {
-      NumOfCards = 52;
-      CardsGiven = 3;
-      
-       
+      Cards = "7";
+      Suit = "♣";
        
     }    
-public Card (int NumOfCards, int CardsGiven )    
+public Card (String Cards, String Suit )    
     {
-       this.MyHand = MyHand;
+       this.Cards = Cards;
+       this.Suit = Suit;
       
     }   
-public String toString()
+
+    public String toString()
     {
-        String output = new String ();
-        output = MyHand;
-             
-        return output;
+        String result =  String.format (
+        "%s %s", Cards, Suit);
+        return result;
     } 
     
 }

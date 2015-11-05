@@ -12,15 +12,15 @@ public class BlackJackP6
         int [] a = new int [2];
         int [] b = new int [2];
         String Winner;
-        String [] Dealer = new String[2];
-        String [] Player1 = new String[2];
-        String [] Player2 = new String[2];
-        String [] Player3 = new String[2];
-        String [] Player4 = new String[2];
-        String [] Player5 = new String[2];
+        Card [] Dealer = new Card[2];
+        Card [] Player1 = new Card[2];
+        Card [] Player2 = new Card[2];
+        Card [] Player3 = new Card[2];
+        Card [] Player4 = new Card[2];
+        Card [] Player5 = new Card[2];
         
-        String [] Cards =  {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
-        String [] Suit = {"♥", "♦", "♣", "♠"};
+      String [] Cards =  {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+       String [] Suit = {"♥", "♦", "♣", "♠"};
        
        System.out.print("----Dealer----"); 
        System.out.print("\n");
@@ -28,7 +28,8 @@ public class BlackJackP6
        {
         a[i] = ((int) (Math.random()*13));
         b[i] = ((int) (Math.random()*4));
-        Dealer[i]= Cards[a[i]] + Suit[b[i]];
+        Card DealerHand= new Card(Cards[a[i]],Suit[b[i]]); 
+        Dealer[i]=DealerHand;
         System.out.print( " Dealer Card: " +Dealer[i] + "\n");
         }
         
@@ -101,7 +102,8 @@ public class BlackJackP6
        {
         a[i] = ((int) (Math.random()*13));
         b[i] = ((int) (Math.random()*4));
-        Player1[i]= Cards[a[i]] + Suit[b[i]];
+       Card PlayerHand= new Card(Cards[a[i]],Suit[b[i]]); 
+        Player1[i]=PlayerHand;
         System.out.print( " Player Card: " +Player1[i] + "\n");
         }
         
@@ -194,11 +196,12 @@ public class BlackJackP6
         System.out.print("\n");
         System.out.print("----PLAYER 2----"); 
        System.out.print("\n");
-       for( int i = 0; i < Player2.length; i++)
+      for( int i = 0; i < Player1.length; i++)
        {
         a[i] = ((int) (Math.random()*13));
         b[i] = ((int) (Math.random()*4));
-        Player2[i]= Cards[a[i]] + Suit[b[i]];
+       Card PlayerHand= new Card(Cards[a[i]],Suit[b[i]]); 
+        Player2[i]=PlayerHand;
         System.out.print( " Player Card: " +Player2[i] + "\n");
         }
         
@@ -292,11 +295,12 @@ public class BlackJackP6
         
        System.out.print("----PLAYER 3----"); 
        System.out.print("\n");
-       for( int i = 0; i < Player3.length; i++)
+     for( int i = 0; i < Player1.length; i++)
        {
         a[i] = ((int) (Math.random()*13));
         b[i] = ((int) (Math.random()*4));
-        Player3[i]= Cards[a[i]] + Suit[b[i]];
+       Card PlayerHand= new Card(Cards[a[i]],Suit[b[i]]); 
+        Player3[i]=PlayerHand;
         System.out.print( " Player Card: " +Player3[i] + "\n");
         }
         
@@ -387,11 +391,12 @@ public class BlackJackP6
         
          System.out.print("----PLAYER 4----"); 
        System.out.print("\n");
-       for( int i = 0; i < Player4.length; i++)
+    for( int i = 0; i < Player1.length; i++)
        {
         a[i] = ((int) (Math.random()*13));
         b[i] = ((int) (Math.random()*4));
-        Player4[i]= Cards[a[i]] + Suit[b[i]];
+       Card PlayerHand= new Card(Cards[a[i]],Suit[b[i]]); 
+        Player4[i]=PlayerHand;
         System.out.print( " Player Card: " +Player4[i] + "\n");
         }
         
@@ -481,11 +486,12 @@ public class BlackJackP6
         
            System.out.print("----PLAYER 5----"); 
        System.out.print("\n");
-       for( int i = 0; i < Player5.length; i++)
+      for( int i = 0; i < Player1.length; i++)
        {
         a[i] = ((int) (Math.random()*13));
         b[i] = ((int) (Math.random()*4));
-        Player5[i]= Cards[a[i]] + Suit[b[i]];
+       Card PlayerHand= new Card(Cards[a[i]],Suit[b[i]]); 
+        Player5[i]=PlayerHand;
         System.out.print( " Player Card: " +Player5[i] + "\n");
         }
         

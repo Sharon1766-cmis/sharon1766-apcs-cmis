@@ -17,13 +17,14 @@ public Car1 (String Name, int Seating )
        this.Seating = Seating;
       
     }   
-public String toString()
+
+  public String toString()
     {
-        String output = new String ();
-        output = "Name:"+Name +"\n"+
-                        "Seating:" +Seating+"\n" ;
+        String result =  String.format (
+        "Name: %s\n"+
+        "Seating: %d", Name, Seating);
              
-        return output;
-    } 
+        return result;
+    }   
     
 }

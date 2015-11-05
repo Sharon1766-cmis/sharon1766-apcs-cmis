@@ -21,14 +21,14 @@ public senior001 (double GPA, String fname, String lname, int age)
        this.lname = lname;
        this.age = age;
     }   
-public String toString()
+
+ public String toString()
     {
-        String output = new String ();
-        output = "GPA:"+GPA +"\n"+
-                        "First Name:" +fname+"\n" + 
-                        "Last Name:" +lname + "\n" +
-                        "Age:"+age;
-        return output;
-    } 
-    
+        String result =  String.format (
+        "GPA: %.2f\n"+
+        "First Name: %s\n"+
+        "Last Name: %s\n"+
+        "Age: %s\n", GPA, fname, lname, age);
+        return result;
+    }    
 }

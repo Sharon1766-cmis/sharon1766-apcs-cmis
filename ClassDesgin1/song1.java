@@ -18,13 +18,14 @@ public song1 (double length, String name, String artist)
        this.name = name;
        this.artist = artist;
     }   
-public String toString()
+
+    public String toString()
     {
-        String output = new String ();
-        output = "Legnth:"+length+"mins" +"\n"+
-                        "Name:" +name+"\n" + 
-                        "Artist:" +artist;
-        return output;
+        String result =  String.format (
+        "Length:  %.0f mins\n"+
+        "Name:  %s\n"+
+        "Artist:  %s\n", length, name, artist);
+        return result;
     } 
     
 }

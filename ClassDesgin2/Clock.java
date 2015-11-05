@@ -20,9 +20,9 @@ public Clock (int Hour, int Mins, int Secs)
     }   
 public String toString()
     {
-        String output = new String ();
-        output = Hour+ " : " + Mins + " : " +Secs +"\n";
-        return output;
+        String result = String.format (
+         "%d : %d : %d\n", Hour, Mins, Secs );
+        return result;
     } 
     
 }
