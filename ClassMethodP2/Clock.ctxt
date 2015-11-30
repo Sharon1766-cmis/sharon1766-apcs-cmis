@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Clock()
+comment1.params=hours\ min\ secs
+comment1.target=Clock(int,\ int,\ int)
+comment2.params=hours\ min\ secs
+comment2.target=void\ setTime(int,\ int,\ int)
+comment3.params=
+comment3.target=int\ totalsecs()
+comment4.params=addhour
+comment4.target=int\ convertDaylightSaving(int)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
