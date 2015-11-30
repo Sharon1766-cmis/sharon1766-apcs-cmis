@@ -1,13 +1,13 @@
 public class Clock
 {
   
-      //instance
+      
     private int hours;
     private int min;
     private int secs;
     private int totalsecs;
     private int addhour;
-    //constructor 
+   
     public Clock()
     {
         hours = 18;
@@ -15,7 +15,6 @@ public class Clock
         secs = 55;
     }
     
-    //three-argument constructor
     public Clock(int hours,int min, int secs)
     {
         this.hours=hours;
@@ -23,7 +22,7 @@ public class Clock
         this.secs=min;
     }
     
-    //set the time
+    
     public void setTime(int hours,int min, int secs)
     {
         this.hours=hours;
@@ -44,7 +43,7 @@ public class Clock
         this.hours=this.hours+addhour;
         return hours;
     }
-    //turn into a string to print
+    
     public String toString()
     
     {
@@ -54,4 +53,4 @@ public class Clock
         return result;
     }
     
-}// end clss Clock
+}

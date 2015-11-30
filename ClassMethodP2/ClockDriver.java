@@ -7,7 +7,7 @@ public class ClockDriver
             Clock.totalsecs();
             System.out.println(Clock);
             
-            Clock.setTime(1,1,1);
+            Clock.setTime(1,1,1);//default setting
             Clock.totalsecs();
             System.out.println(Clock);
             
