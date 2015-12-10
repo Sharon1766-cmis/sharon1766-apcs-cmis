@@ -48,7 +48,7 @@ public class Clock
     
     {
         String result = String.format(
-        "TIME: %d : %d : %d \n"+
+        "TIME: %02d : %02d : %02d \n"+
         "Time in Secs: %d\n", hours, min, secs, totalsecs);
         return result;
     }
